@@ -1,0 +1,67 @@
+.clearfix {
+  content: '.';
+  font-size: 0px;
+  clear: both;
+}
+.row {
+  width: 100%;
+  float: left;
+}
+.row:after {
+  content: '.';
+  font-size: 0px;
+  clear: both;
+}
+.make-hide {
+  display: none;
+}
+@media all and (min-width: 40em) and (max-width: 80em) {
+  .make-hide-xs {
+    display: none;
+  }
+}
+@media all and (min-width: 80em) and (max-width: 120em) {
+  .make-hide-sm {
+    display: none;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 160em) {
+  .make-hide-md {
+    display: none;
+  }
+}
+@media all and (min-width: 160em) and (max-width: 240em) {
+  .make-hide-lg {
+    display: none;
+  }
+}
+@media all and (min-width: 240em) and (max-width: 480em) {
+  .make-hide-xl {
+    display: none;
+  }
+}
+@media not all and (min-width: 40em) and (max-width: 80em) {
+  .make-show-xs {
+    display: none;
+  }
+}
+@media not all and (min-width: 80em) and (max-width: 120em) {
+  .make-show-sm {
+    display: none;
+  }
+}
+@media not all and (min-width: 120em) and (max-width: 160em) {
+  .make-show-md {
+    display: none;
+  }
+}
+@media not all and (min-width: 160em) and (max-width: 240em) {
+  .make-show-lg {
+    display: none;
+  }
+}
+@media not all and (min-width: 240em) and (max-width: 480em) {
+  .make-show-xl {
+    display: none;
+  }
+}

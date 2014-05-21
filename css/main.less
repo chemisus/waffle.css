@@ -1,0 +1,48 @@
+@import "reset";
+@import "waffle";
+
+[data-page-content] {
+  .row;
+  .make-wrap-xs(2);
+  .make-wrap-sm(3);
+  .make-wrap-md(4);
+  .make-wrap-lg(6);
+  .make-wrap-xl(12);
+
+  [data-item] {
+    .make-col-xs(6);
+    .make-col-sm(4);
+    .make-col-md(3);
+    .make-col-lg(2);
+    .make-col-xl(1);
+
+    [data-box] {
+      margin: 5px;
+
+      [data-xl] {
+        .make-show-xl;
+      }
+
+      [data-lg] {
+        .make-show-lg;
+      }
+
+      [data-md] {
+        .make-show-md;
+      }
+
+      [data-sm] {
+        .make-show-sm;
+      }
+
+      [data-xs] {
+        .make-show-xs;
+      }
+
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+  }
+}
