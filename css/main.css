@@ -415,19 +415,19 @@ table,
 @media all and (min-width: 120em) and (max-width: 159.999em) {
   [data-page-content] [data-search] {
     float: left;
-    width: 25%;
+    width: 16.66666667%;
   }
 }
 @media all and (min-width: 160em) and (max-width: 239.999em) {
   [data-page-content] [data-search] {
     float: left;
-    width: 25%;
+    width: 16.66666667%;
   }
 }
 @media all and (min-width: 240em) and (max-width: 480em) {
   [data-page-content] [data-search] {
     float: left;
-    width: 25%;
+    width: 8.33333333%;
   }
 }
 @media all and (min-width: 0em) and (max-width: 39.999em) {
@@ -451,19 +451,19 @@ table,
 @media all and (min-width: 120em) and (max-width: 159.999em) {
   [data-page-content] [data-results] {
     float: left;
-    width: 75%;
+    width: 83.33333333%;
   }
 }
 @media all and (min-width: 160em) and (max-width: 239.999em) {
   [data-page-content] [data-results] {
     float: left;
-    width: 75%;
+    width: 83.33333333%;
   }
 }
 @media all and (min-width: 240em) and (max-width: 480em) {
   [data-page-content] [data-results] {
     float: left;
-    width: 75%;
+    width: 91.66666667%;
   }
 }
 @media all and (min-width: 0em) and (max-width: 39.999em) {
@@ -544,7 +544,7 @@ table,
     width: 8.33333333%;
   }
 }
-[data-page-content] [data-results] [data-result] img {
+[data-page-content] [data-results] [data-result] [data-box] img {
   float: left;
   width: 100%;
 }
