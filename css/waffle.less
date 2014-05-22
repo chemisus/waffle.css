@@ -77,9 +77,18 @@
   }
 }
 
+.cols(@zs: 12, @xs: 12, @sm: 12, @md: 12, @lg: 12, @xl: 12) {
+  .col-zs(@zs);
+  .col-xs(@xs);
+  .col-sm(@sm);
+  .col-md(@md);
+  .col-lg(@lg);
+  .col-xl(@xl);
+}
+
 .wrap (@size) {
-  & > *:nth-child(@{size}n + 1) {
-    clear: both;
+  & > *:nth-child(@{size}n):after {
+    .clearfix;
   }
 }
 
@@ -117,6 +126,15 @@
   @media all and (min-width: @xl-min) and (max-width: @xl-max) {
     .wrap(@size);
   }
+}
+
+.wraps(@zs: 12, @xs: 12, @sm: 12, @md: 12, @lg: 12, @xl: 12) {
+  .wrap-zs(@zs);
+  .wrap-xs(@xs);
+  .wrap-sm(@sm);
+  .wrap-md(@md);
+  .wrap-lg(@lg);
+  .wrap-xl(@xl);
 }
 
 .hide {

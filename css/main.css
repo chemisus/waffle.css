@@ -304,114 +304,256 @@ table,
     display: none;
   }
 }
-@media not all and (min-width: 240em) and (max-width: 480em) {
-  [data-page-content] [data-xl] {
-    display: none;
-  }
-}
-@media not all and (min-width: 160em) and (max-width: 239.999em) {
-  [data-page-content] [data-lg] {
-    display: none;
-  }
-}
-@media not all and (min-width: 120em) and (max-width: 159.999em) {
-  [data-page-content] [data-md] {
-    display: none;
-  }
-}
-@media not all and (min-width: 80em) and (max-width: 119.999em) {
-  [data-page-content] [data-sm] {
-    display: none;
-  }
-}
-@media not all and (min-width: 40em) and (max-width: 79.999em) {
-  [data-page-content] [data-xs] {
-    display: none;
-  }
-}
-@media not all and (min-width: 0em) and (max-width: 39.999em) {
-  [data-page-content] [data-zs] {
-    display: none;
-  }
-}
-[data-page-content] [data-items] {
+[data-page-header] {
   width: 100%;
   float: left;
 }
-[data-page-content] [data-items]:after {
+[data-page-header]:after {
   content: '.';
   font-size: 0px;
   clear: both;
 }
 @media all and (min-width: 0em) and (max-width: 39.999em) {
-  [data-page-content] [data-items] > *:nth-child( 1n + 1) {
-    clear: both;
-  }
-}
-@media all and (min-width: 40em) and (max-width: 79.999em) {
-  [data-page-content] [data-items] > *:nth-child( 2n + 1) {
-    clear: both;
-  }
-}
-@media all and (min-width: 80em) and (max-width: 119.999em) {
-  [data-page-content] [data-items] > *:nth-child( 3n + 1) {
-    clear: both;
-  }
-}
-@media all and (min-width: 120em) and (max-width: 159.999em) {
-  [data-page-content] [data-items] > *:nth-child( 4n + 1) {
-    clear: both;
-  }
-}
-@media all and (min-width: 160em) and (max-width: 239.999em) {
-  [data-page-content] [data-items] > *:nth-child( 6n + 1) {
-    clear: both;
-  }
-}
-@media all and (min-width: 240em) and (max-width: 480em) {
-  [data-page-content] [data-items] > *:nth-child( 12n + 1) {
-    clear: both;
-  }
-}
-@media all and (min-width: 0em) and (max-width: 39.999em) {
-  [data-page-content] [data-items] [data-item] {
+  [data-page-header] [data-logo] {
     float: left;
     width: 100%;
   }
 }
 @media all and (min-width: 40em) and (max-width: 79.999em) {
-  [data-page-content] [data-items] [data-item] {
+  [data-page-header] [data-logo] {
     float: left;
-    width: 50%;
+    width: 25%;
   }
 }
 @media all and (min-width: 80em) and (max-width: 119.999em) {
-  [data-page-content] [data-items] [data-item] {
+  [data-page-header] [data-logo] {
     float: left;
-    width: 33.33333333%;
+    width: 25%;
   }
 }
 @media all and (min-width: 120em) and (max-width: 159.999em) {
-  [data-page-content] [data-items] [data-item] {
+  [data-page-header] [data-logo] {
     float: left;
     width: 25%;
   }
 }
 @media all and (min-width: 160em) and (max-width: 239.999em) {
-  [data-page-content] [data-items] [data-item] {
+  [data-page-header] [data-logo] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 240em) and (max-width: 480em) {
+  [data-page-header] [data-logo] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 0em) and (max-width: 39.999em) {
+  [data-page-header] [data-links] {
+    float: left;
+    width: 100%;
+  }
+}
+@media all and (min-width: 40em) and (max-width: 79.999em) {
+  [data-page-header] [data-links] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 80em) and (max-width: 119.999em) {
+  [data-page-header] [data-links] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 159.999em) {
+  [data-page-header] [data-links] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 160em) and (max-width: 239.999em) {
+  [data-page-header] [data-links] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 240em) and (max-width: 480em) {
+  [data-page-header] [data-links] {
+    float: left;
+    width: 75%;
+  }
+}
+[data-page-content] {
+  width: 100%;
+  float: left;
+}
+[data-page-content]:after {
+  content: '.';
+  font-size: 0px;
+  clear: both;
+}
+@media all and (min-width: 0em) and (max-width: 39.999em) {
+  [data-page-content] [data-search] {
+    float: left;
+    width: 100%;
+  }
+}
+@media all and (min-width: 40em) and (max-width: 79.999em) {
+  [data-page-content] [data-search] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 80em) and (max-width: 119.999em) {
+  [data-page-content] [data-search] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 159.999em) {
+  [data-page-content] [data-search] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 160em) and (max-width: 239.999em) {
+  [data-page-content] [data-search] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 240em) and (max-width: 480em) {
+  [data-page-content] [data-search] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 0em) and (max-width: 39.999em) {
+  [data-page-content] [data-results] {
+    float: left;
+    width: 100%;
+  }
+}
+@media all and (min-width: 40em) and (max-width: 79.999em) {
+  [data-page-content] [data-results] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 80em) and (max-width: 119.999em) {
+  [data-page-content] [data-results] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 159.999em) {
+  [data-page-content] [data-results] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 160em) and (max-width: 239.999em) {
+  [data-page-content] [data-results] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 240em) and (max-width: 480em) {
+  [data-page-content] [data-results] {
+    float: left;
+    width: 75%;
+  }
+}
+@media all and (min-width: 0em) and (max-width: 39.999em) {
+  [data-page-content] [data-results] > *:nth-child( 1n):after {
+    content: '.';
+    font-size: 0px;
+    clear: both;
+  }
+}
+@media all and (min-width: 40em) and (max-width: 79.999em) {
+  [data-page-content] [data-results] > *:nth-child( 2n):after {
+    content: '.';
+    font-size: 0px;
+    clear: both;
+  }
+}
+@media all and (min-width: 80em) and (max-width: 119.999em) {
+  [data-page-content] [data-results] > *:nth-child( 3n):after {
+    content: '.';
+    font-size: 0px;
+    clear: both;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 159.999em) {
+  [data-page-content] [data-results] > *:nth-child( 4n):after {
+    content: '.';
+    font-size: 0px;
+    clear: both;
+  }
+}
+@media all and (min-width: 160em) and (max-width: 239.999em) {
+  [data-page-content] [data-results] > *:nth-child( 6n):after {
+    content: '.';
+    font-size: 0px;
+    clear: both;
+  }
+}
+@media all and (min-width: 240em) and (max-width: 480em) {
+  [data-page-content] [data-results] > *:nth-child( 12n):after {
+    content: '.';
+    font-size: 0px;
+    clear: both;
+  }
+}
+@media all and (min-width: 0em) and (max-width: 39.999em) {
+  [data-page-content] [data-results] [data-result] {
+    float: left;
+    width: 100%;
+  }
+}
+@media all and (min-width: 40em) and (max-width: 79.999em) {
+  [data-page-content] [data-results] [data-result] {
+    float: left;
+    width: 50%;
+  }
+}
+@media all and (min-width: 80em) and (max-width: 119.999em) {
+  [data-page-content] [data-results] [data-result] {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media all and (min-width: 120em) and (max-width: 159.999em) {
+  [data-page-content] [data-results] [data-result] {
+    float: left;
+    width: 25%;
+  }
+}
+@media all and (min-width: 160em) and (max-width: 239.999em) {
+  [data-page-content] [data-results] [data-result] {
     float: left;
     width: 16.66666667%;
   }
 }
 @media all and (min-width: 240em) and (max-width: 480em) {
-  [data-page-content] [data-items] [data-item] {
+  [data-page-content] [data-results] [data-result] {
     float: left;
     width: 8.33333333%;
   }
 }
-[data-page-content] [data-items] [data-item] [data-box] {
-  margin: 5px;
-  background: gray;
-  font-size: 2em;
-  font-weight: bold;
+[data-page-content] [data-results] [data-result] img {
+  float: left;
+  width: 100%;
+}
+[data-page-footer] {
+  width: 100%;
+  float: left;
+}
+[data-page-footer]:after {
+  content: '.';
+  font-size: 0px;
+  clear: both;
 }

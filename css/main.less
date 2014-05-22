@@ -1,54 +1,40 @@
 @import "reset";
 @import "waffle";
 
+[data-page-header] {
+  .row;
+
+  [data-logo] {
+    .cols(12, 3, 3, 3, 3, 3);
+  }
+
+  [data-links] {
+    .cols(12, 9, 9, 9, 9, 9);
+  }
+}
+
 [data-page-content] {
-  [data-xl] {
-    .show-xl;
+  .row;
+
+  [data-search] {
+    .cols(12, 3, 3, 3, 3, 3);
   }
 
-  [data-lg] {
-    .show-lg;
-  }
+  [data-results] {
+    .cols(12, 9, 9, 9, 9, 9);
+    .wraps(1, 2, 3, 4, 6, 12);
 
-  [data-md] {
-    .show-md;
-  }
+    [data-result] {
+      .cols(12, 6, 4, 3, 2, 1);
 
-  [data-sm] {
-    .show-sm;
-  }
-
-  [data-xs] {
-    .show-xs;
-  }
-
-  [data-zs] {
-    .show-zs;
-  }
-
-  [data-items] {
-    .row;
-    .wrap-zs(1);
-    .wrap-xs(2);
-    .wrap-sm(3);
-    .wrap-md(4);
-    .wrap-lg(6);
-    .wrap-xl(12);
-
-    [data-item] {
-      .col-zs(12);
-      .col-xs(6);
-      .col-sm(4);
-      .col-md(3);
-      .col-lg(2);
-      .col-xl(1);
-
-      [data-box] {
-        margin: 5px;
-        background: gray;
-        font-size: 2em;
-        font-weight: bold;
+      img {
+        float: left;
+        width: 100%;
       }
     }
   }
+}
+
+[data-page-footer] {
+  .row;
 }
