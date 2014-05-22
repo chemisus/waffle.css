@@ -2,44 +2,50 @@
 @import "waffle";
 
 [data-page-content] {
-  .row;
-  .make-wrap-xs(2);
-  .make-wrap-sm(3);
-  .make-wrap-md(4);
-  .make-wrap-lg(6);
-  .make-wrap-xl(12);
+  [data-xl] {
+    .show-xl;
+  }
 
-  [data-item] {
-    .make-col-xs(6);
-    .make-col-sm(4);
-    .make-col-md(3);
-    .make-col-lg(2);
-    .make-col-xl(1);
+  [data-lg] {
+    .show-lg;
+  }
 
-    [data-box] {
-      margin: 5px;
+  [data-md] {
+    .show-md;
+  }
 
-      [data-xl] {
-        .make-show-xl;
-      }
+  [data-sm] {
+    .show-sm;
+  }
 
-      [data-lg] {
-        .make-show-lg;
-      }
+  [data-xs] {
+    .show-xs;
+  }
 
-      [data-md] {
-        .make-show-md;
-      }
+  [data-zs] {
+    .show-zs;
+  }
 
-      [data-sm] {
-        .make-show-sm;
-      }
+  [data-items] {
+    .row;
+    .wrap-zs(1);
+    .wrap-xs(2);
+    .wrap-sm(3);
+    .wrap-md(4);
+    .wrap-lg(6);
+    .wrap-xl(12);
 
-      [data-xs] {
-        .make-show-xs;
-      }
+    [data-item] {
+      .col-zs(12);
+      .col-xs(6);
+      .col-sm(4);
+      .col-md(3);
+      .col-lg(2);
+      .col-xl(1);
 
-      h1 {
+      [data-box] {
+        margin: 5px;
+        background: gray;
         font-size: 2em;
         font-weight: bold;
       }
