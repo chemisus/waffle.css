@@ -1,0 +1,51 @@
+@import "reset.css";
+@import "waffle.less";
+
+body {
+  background: #1e1e1e;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+[data-container] {
+  .container;
+}
+
+[data-row] {
+  .row;
+}
+
+[data-page-content] {
+  [data-panel] {
+    margin: 5px;
+    background: white;
+  }
+
+  [data-join-service] {
+    .col(4);
+  }
+
+  [data-whats-hot] {
+    .col(8, @side: right);
+  }
+
+  [data-featured-products] {
+    .col(12);
+    .row;
+  }
+
+  [data-audio-series] {
+    .col(4);
+  }
+
+  [data-video-series] {
+    .col(4);
+  }
+
+  [data-pool-series] {
+    .col(4);
+  }
+}
