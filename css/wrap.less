@@ -1,0 +1,53 @@
+@import "variables.less";
+@import "common.less";
+
+.wrap (@size) {
+  & > *:nth-child(@{size}n):after {
+    .clearfix;
+  }
+}
+
+.wrap-zs (@size, @side: left) {
+  @media all and (min-width: @zs-min) and (max-width: @zs-max) {
+    .wrap(@size);
+  }
+}
+
+.wrap-xs (@size, @side: left) {
+  @media all and (min-width: @xs-min) and (max-width: @xs-max) {
+    .wrap(@size);
+  }
+}
+
+.wrap-sm (@size, @side: left) {
+  @media all and (min-width: @sm-min) and (max-width: @sm-max) {
+    .wrap(@size);
+  }
+}
+
+.wrap-md (@size, @side: left) {
+  @media all and (min-width: @md-min) and (max-width: @md-max) {
+    .wrap(@size);
+  }
+}
+
+.wrap-lg (@size, @side: left) {
+  @media all and (min-width: @lg-min) and (max-width: @lg-max) {
+    .wrap(@size);
+  }
+}
+
+.wrap-xl (@size, @side: left) {
+  @media all and (min-width: @xl-min) and (max-width: @xl-max) {
+    .wrap(@size);
+  }
+}
+
+.wraps(@zs: 12, @xs: 12, @sm: 12, @md: 12, @lg: 12, @xl: 12) {
+  .wrap-zs(@zs);
+  .wrap-xs(@xs);
+  .wrap-sm(@sm);
+  .wrap-md(@md);
+  .wrap-lg(@lg);
+  .wrap-xl(@xl);
+}

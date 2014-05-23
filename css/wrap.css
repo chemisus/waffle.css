@@ -1,0 +1,14 @@
+.clearfix {
+  content: '.';
+  font-size: 0px;
+  clear: both;
+}
+.row {
+  width: 100%;
+  float: left;
+}
+.row:after {
+  content: '.';
+  font-size: 0px;
+  clear: both;
+}

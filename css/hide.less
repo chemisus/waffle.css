@@ -1,0 +1,78 @@
+@import "variables.less";
+@import "common.less";
+
+.hide {
+  display: none;
+}
+
+.hide-zs {
+  @media all and (min-width: @zs-min) and (max-width: @zs-max) {
+    .hide;
+  }
+}
+
+.hide-xs {
+  @media all and (min-width: @xs-min) and (max-width: @xs-max) {
+    .hide;
+  }
+}
+
+.hide-sm {
+  @media all and (min-width: @sm-min) and (max-width: @sm-max) {
+    .hide;
+  }
+}
+
+.hide-md {
+  @media all and (min-width: @md-min) and (max-width: @md-max) {
+    .hide;
+  }
+}
+
+.hide-lg {
+  @media all and (min-width: @lg-min) and (max-width: @lg-max) {
+    .hide;
+  }
+}
+
+.hide-xl {
+  @media all and (min-width: @xl-min) and (max-width: @xl-max) {
+    .hide;
+  }
+}
+
+.show-zs {
+  @media not all and (min-width: @zs-min) and (max-width: @zs-max) {
+    .hide;
+  }
+}
+
+.show-xs {
+  @media not all and (min-width: @xs-min) and (max-width: @xs-max) {
+    .hide;
+  }
+}
+
+.show-sm {
+  @media not all and (min-width: @sm-min) and (max-width: @sm-max) {
+    .hide;
+  }
+}
+
+.show-md {
+  @media not all and (min-width: @md-min) and (max-width: @md-max) {
+    .hide;
+  }
+}
+
+.show-lg {
+  @media not all and (min-width: @lg-min) and (max-width: @lg-max) {
+    .hide;
+  }
+}
+
+.show-xl {
+  @media not all and (min-width: @xl-min) and (max-width: @xl-max) {
+    .hide;
+  }
+}

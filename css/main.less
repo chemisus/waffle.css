@@ -1,42 +1,16 @@
 @import "reset";
 @import "waffle";
 
-[data-page-header] {
-  .row;
+[data-hide-or-show] {
+  [data-row] {
+    .row;
+    .col(7, @pr: 0.3333%);
+    background: black;
 
-  [data-logo] {
-    .cols(12, 3, 3, 3, 3, 3);
-  }
+    [data-zs], [data-xs], [data-sm], [data-md], [data-lg], [data-xl] {
+      .col(2, @ml: 0.6666%);
 
-  [data-links] {
-    .cols(12, 9, 9, 9, 9, 9);
-  }
-}
-
-[data-page-content] {
-  .row;
-
-  [data-search] {
-    .cols(12, 3, 3, 2, 2, 1);
-  }
-
-  [data-results] {
-    .cols(12, 9, 9, 10, 10, 11);
-    .wraps(1, 2, 3, 4, 6, 12);
-
-    [data-result] {
-      .cols(12, 6, 4, 3, 2, 1);
-
-      [data-box] {
-        img {
-          float: left;
-          width: 100%;
-        }
-      }
+      background: gray;
     }
   }
-}
-
-[data-page-footer] {
-  .row;
 }

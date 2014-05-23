@@ -1,0 +1,57 @@
+@import "variables.less";
+@import "common.less";
+
+.col (@size, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side: left) {
+  float: @side;
+  width: (percentage(@size / 12) - @ml - @pl - @pr - @mr);
+  margin-left: @ml;
+  margin-right: @mr;
+  padding-left: @pl;
+  padding-right: @pr;
+
+}
+
+.col-zs (@size, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side: left) {
+  @media all and (min-width: @zs-min) and (max-width: @zs-max) {
+    .col(@size, @ml, @pl, @pr, @mr, @side);
+  }
+}
+
+.col-xs (@size, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side: left) {
+  @media all and (min-width: @xs-min) and (max-width: @xs-max) {
+    .col(@size, @ml, @pl, @pr, @mr, @side);
+  }
+}
+
+.col-sm (@size, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side: left) {
+  @media all and (min-width: @sm-min) and (max-width: @sm-max) {
+    .col(@size, @ml, @pl, @pr, @mr, @side);
+  }
+}
+
+.col-md (@size, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side: left) {
+  @media all and (min-width: @md-min) and (max-width: @md-max) {
+    .col(@size, @ml, @pl, @pr, @mr, @side);
+  }
+}
+
+.col-lg (@size, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side: left) {
+  @media all and (min-width: @lg-min) and (max-width: @lg-max) {
+    .col(@size, @ml, @pl, @pr, @mr, @side);
+  }
+}
+
+.col-xl (@size, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side: left) {
+  @media all and (min-width: @xl-min) and (max-width: @xl-max) {
+    .col(@size, @ml, @pl, @pr, @mr, @side);
+  }
+}
+
+.cols(@zs: 12, @xs: 12, @sm: 12, @md: 12, @lg: 12, @xl: 12, @ml:0%, @pl:0%, @pr:0%, @mr:0%, @side:left) {
+  .col-zs(@zs, @ml, @pl, @pr, @mr, @side);
+  .col-xs(@xs, @ml, @pl, @pr, @mr, @side);
+  .col-sm(@sm, @ml, @pl, @pr, @mr, @side);
+  .col-md(@md, @ml, @pl, @pr, @mr, @side);
+  .col-lg(@lg, @ml, @pl, @pr, @mr, @side);
+  .col-xl(@xl, @ml, @pl, @pr, @mr, @side);
+}

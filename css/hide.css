@@ -1,4 +1,3 @@
-@import "reset.css";
 .clearfix {
   content: '.';
   font-size: 0px;
@@ -75,57 +74,4 @@
   .show-xl {
     display: none;
   }
-}
-body {
-  background: #1e1e1e;
-}
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-[data-container] {
-  max-width: 900px;
-  margin: auto;
-}
-[data-row] {
-  width: 100%;
-  float: left;
-}
-[data-row]:after {
-  content: '.';
-  font-size: 0px;
-  clear: both;
-}
-[data-page-content] [data-panel] {
-  margin: 5px;
-  background: white;
-}
-[data-page-content] [data-join-service] {
-  float: left;
-  width: 33.33333333%;
-}
-[data-page-content] [data-whats-hot] {
-  float: right;
-  width: 66.66666667%;
-}
-[data-page-content] [data-featured-products] {
-  width: 100%;
-  float: left;
-}
-[data-page-content] [data-featured-products]:after {
-  content: '.';
-  font-size: 0px;
-  clear: both;
-}
-[data-page-content] [data-audio-series] {
-  float: left;
-  width: 33.33333333%;
-}
-[data-page-content] [data-video-series] {
-  float: left;
-  width: 33.33333333%;
-}
-[data-page-content] [data-pool-series] {
-  float: left;
-  width: 33.33333333%;
 }
